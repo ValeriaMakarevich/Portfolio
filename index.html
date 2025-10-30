@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <div class="logo__text">
+          <span class="logo__b">В</span>алерия
+          <span class="logo__m">М</span>акаревич
+        </div>
+      </div>
+      <nav class="menu">
+<div class="menu">
+        
+        <ul class="menu__list">
+          <li class="menu__element-1" data-target="home">Главная</li>
+          <li data-target="about">Обо мне</li>
+          <li data-target="skills">Мои навыки</li>
+          <li data-target="portfolio">Моё партфолио</li>
+          <li data-target="contact">Свяжитесь</li>
+        </ul>
+        <button class="menu__btn" onclick="window.open('https://wa.me/79291922156', '_blank')">Свяжитесь со мной</button>
+      </nav>
+    </header>
+
+<main>
+    <section class="description" id="home">
+      <div>
+        <p class="description__intro">Добрый день! Меня зовут</p>
+        <h1 class="description__title">
+          <span class="description__name">Валерия</span> Макаревич
+        </h1>
+        <p class="description__profession">Frontend разработчик</p>
+        <p class="description__text">
+          Живу в России, Москве. Учусь frontend разработке больше года. Очень
+          люблю своё дело и хочу стать высококлассным специалистом
+        </p>
+        <div class="description__btn-container">
+          <button class="description__btn-downoload">Скачать резюме</button>
+          <button class="description__btn-contact">Мои контакты</button>
+        </div>
+        <div class="description__social">
+          <button onclick="window.open('https://github.com/ValeriaMakarevich', '_blank')" ><img src="image/Vector.png" alt="логотип гитхаб" /></button>
+          <button onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=lsmolyanova517@gmail.com', '_blank')"><img src="image/mail.png" alt="Логотип почты" /></button>
+        </div>
+      </div>
+      <div>
+        <img
+          class="description__img"
+          src="image/IMG_20250926_135904.jpg"
+          alt="Моё фото"
+        />
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div>
+        <img class="about__img" src="image/IMG_20250926_135904.jpg" alt="" />
+      </div>
+
+      <div class="about__container">
+        <p class="about__intro">Обо мне</p>
+        <h2 class="about__title">
+          <span class="">Целеустремлённый</span>, увлеченный
+          <span>frontend</span> разработчик
+        </h2>
+        <p class="about__text">
+          Более года опыта frontend разработки. Я трудолюбивый человек,
+          ответственно подходящий к работе. Очень увлечена программированием и
+          всегда готова изучать новые технологии. Готова учавствовать в
+          разработке и помогать компании в достижении целей. С радостью приму
+          предложение о сотрудничестве!
+        </p>
+        <ul class="about__list">
+          <li>
+            Вёрстка адаптивных страниц, работа с формами и медиа-элементами
+          </li>
+          <li>Разработка функционала на чистом JavaScript</li>
+          <li>Создание приложений на React, Redux, TypeScript</li>
+          <li>Оптимизация приложений</li>
+        </ul>
+        <p></p>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <p class="skills__intro">Мои <span>навыки</span></p>
+      <h2 class="skills__title">Hard skills</h2>
+      <div class="skills__container">
+        <div><img src="image/7550.png" alt="" /> HTML5</div>
+        <div><img src="image/7551.png" alt="" />CSS3</div>
+        <div><img src="image/image 1 (1).svg" alt="" />JavaScript</div>
+        <div><img src="image/image 3 (2).svg" alt="" />React</div>
+        <div><img src="image/image 2 (1).svg" alt="" />TypeScript</div>
+        <div><img src="image/7548.png" alt="" /> Redux</div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h2 class="portfolio__title">Мои <span>проекты</span></h2>
+      <div class="portfolio__container">
+        <article class="portfolio__container__element">
+          
+
+          <div class="portfolio__text__container">
+            <span>Website</span>
+            <div>
+              <p class="portfolio__text">Кулинарный сайт с рецептами</p>
+              <p class="portfolio__description">
+                Кулинарный сайт с рецептами, с функцией поиска
+              </p>
+            </div>
+            <div class="button__arrow">
+              <a
+                href="https://site-resipe-log4.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="image/arrow-up-right.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="portfolio__container__img">
+            <img class="portfolio__img" src="image/Site-resipe.png" alt="" />
+          </div>
+        </article>
+
+        <article class="portfolio__container__element">
+          <div class="portfolio__text__container">
+            <span>Website</span>
+            <div class="portfoli__text__container">
+              <p class="portfolio__text">Прогноз погоды по городам России</p>
+              <p class="portfolio__description">
+                На этом сайте можно узнать прогноз погоды на 4 дня
+              </p>
+            </div>
+            <div class="button__arrow">
+              <a
+                href="https://weather-indol-rho.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="image/arrow-up-right.png" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="portfolio__container__img">
+            <img class="portfolio__img" src="image/Weather.png" alt="" />
+          </div>
+        </article>
+
+        <article class="portfolio__container__element">
+         
+
+          <div class="portfolio__text__container">
+            <span>Website</span>
+            <p class="portfolio__text">Блокнот для записи дел</p>
+            <p class="portfolio__description">
+              Ежедневник для записи важных дел с функцией сортировки
+            </p>
+            <div class="button__arrow">
+              <a
+                href="https://todo-list-chi-sepia-58.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="image/arrow-up-right.png" alt=""
+              /></a>
+            </div>
+          </div>
+           <div class="portfolio__container__img">
+            <img class="portfolio__img" src="image/Todo.png" alt="" />
+          </div>
+          </article>
+        </div>
+      </section>
+      </main>
+
+      <footer class="footer" id="contact">
+        <button class="footer__btn" onclick="window.open('https://wa.me/79291922156', '_blank')">Свяжитесь со мной</button>
+        <nav class="footer__menu">
+
+       
+
+          <ul class="menu__list">
+          <li class="menu__element-1" data-target="home">Главная</li>
+          <li data-target="about">Обо мне</li>
+          <li data-target="skills">Мои навыки</li>
+          <li data-target="portfolio">Моё партфолио</li>
+          <li data-target="contact">Свяжитесь</li>
+          </ul>
+        </nav>
+      </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
