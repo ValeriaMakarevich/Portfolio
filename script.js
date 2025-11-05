@@ -1,4 +1,9 @@
 const menuElements = document.querySelectorAll("nav ul li");
+const contact = document.querySelector(".description__btn-contact");
+const modalWindow = document.querySelector('#modal-window');
+const modalWindowBtn = document.querySelector(".modal-window__btn");
+
+console.log(contact, modalWindow)
 
 menuElements.forEach((el) => {
   el.addEventListener("click", () => {
@@ -7,3 +12,15 @@ menuElements.forEach((el) => {
     section.scrollIntoView({ behavior: "smooth" });
   });
 });
+
+
+contact.addEventListener('click', () =>{
+  modalWindow.style.display = 'flex'
+})
+
+modalWindowBtn.addEventListener("click", () =>{
+modalWindow.style.display = 'none'
+})
+
+
+

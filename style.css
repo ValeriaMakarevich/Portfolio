@@ -49,7 +49,8 @@ span,
 .menu__btn,
 .description__btn-downoload,
 .description__btn-contact,
-.footer__btn, .portfolio__btn {
+.footer__btn,
+.portfolio__btn {
   background-color: #ff014f;
   border-radius: 10px;
   color: #ffffff;
@@ -89,6 +90,7 @@ span,
   width: 400px;
   height: 90px;
   font-size: 15px;
+  padding-bottom: 100px;
 }
 
 .description__btn-container {
@@ -100,6 +102,11 @@ span,
 .description__btn-downoload {
   width: 180px;
   height: 50px;
+}
+
+.description__btn-downoload > a {
+  text-decoration: none;
+  color: #ffffffb5;
 }
 
 .description__btn-contact {
@@ -122,6 +129,45 @@ span,
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.modal-window{
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items:center;
+  background-color: #44444494;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-window__container{
+  background-color: #1e1e1e;
+  height: 80%;
+  width: 40%;
+  text-align: center;
+  padding-bottom: 7%;
+}
+
+
+
+
+.modal-window__btn{
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  margin-left: 90%;
+  padding: 2%;
+
+}
+
+.modal-window > 
+.modal-window__container > a{
+color: #ff014f;
 }
 
 .description__img,
@@ -212,7 +258,7 @@ span,
   display: flex;
   justify-content: center;
   align-items: center;
-   overflow: hidden; 
+  overflow: hidden;
   height: 400px;
   width: 1000px;
   background-color: rgb(48, 48, 48);
@@ -227,26 +273,25 @@ span,
   border-radius: 10px;
 }
 
-.portfolio__text__container{
+.portfolio__text__container {
   padding-right: 50px;
   padding-left: 50px;
 }
 
-.portfolio__text{
+.portfolio__text {
   font-size: 30px;
 }
 
-.portfolio__description{
+.portfolio__description {
   padding-bottom: 30px;
 }
 
-.portfolio__btn{
-   height: 55px;
+.portfolio__btn {
+  height: 55px;
   width: 150px;
-
 }
 
-.button__arrow{
+.button__arrow {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -257,23 +302,23 @@ span,
   width: 50px;
 }
 
-.footer{
+.footer {
   display: flex;
   margin: 0px;
   height: 90px;
   background-color: rgb(48, 48, 48);
 }
 
-.footer__btn{
+.footer__btn {
   height: 55px;
   width: 150px;
   margin-top: 18px;
   margin-left: 30px;
 }
 
-.footer__menu{
+.footer__menu {
   margin-left: 280px;
-  margin-top:17px;
+  margin-top: 17px;
 }
 
 @media (max-width: 1024px) {
@@ -298,7 +343,6 @@ span,
 }
 
 @media (max-width: 768px) {
-
   .header {
     flex-direction: column;
     align-items: center;
@@ -324,7 +368,6 @@ span,
     height: 45px;
   }
 
-
   .description {
     flex-direction: column-reverse; /* фото теперь между заголовком и текстом */
     align-items: center;
@@ -338,7 +381,6 @@ span,
     height: auto;
     margin: 20px 0;
   }
-
 
   .about {
     flex-direction: column-reverse; /* фото между заголовком и текстом */
@@ -362,7 +404,6 @@ span,
     gap: 40px;
   }
 
-
   .portfolio__container__element {
     flex-direction: column;
     align-items: center;
@@ -373,7 +414,6 @@ span,
     width: 90%;
     height: auto;
   }
-
 
   .footer {
     flex-direction: column;
@@ -390,48 +430,43 @@ span,
 }
 
 @media (max-width: 480px) {
-body{
-   background: repeating-linear-gradient(
-    90deg,
-    #1e1e1e 0 calc((70%) / 6),
-    #444444 0 calc((70% - 6 * 15px) / 5 + 15px)
-  );
-}
+  body {
+    background: repeating-linear-gradient(
+      90deg,
+      #1e1e1e 0 calc((70%) / 6),
+      #444444 0 calc((70% - 6 * 15px) / 5 + 15px)
+    );
+  }
 
-.description {
-  display: flex;
-  padding-left: 0px;
-  gap: 0px;
-  padding-bottom: 100px;
-}
+  .description {
+    display: flex;
+    padding-left: 0px;
+    gap: 0px;
+    padding-bottom: 100px;
+  }
 
-.description__img{
-  padding-bottom: 30px;
-}
+  .description__img {
+    padding-bottom: 30px;
+  }
 
-.description__btn-container{
-  margin: 0 30%;
-}
+  .description__btn-container {
+    margin: 0 30%;
+  }
 
+  .description__social {
+    display: flex;
+    gap: 15px;
+    margin: 0 34%;
+  }
 
+  .about__img {
+    display: none;
+  }
 
-.description__social {
-  display: flex;
-  gap: 15px;
-  margin: 0 34%;
-}
-
-
-
-
-.about__img{
-  display: none;
-}
-
-.about__text {
- padding-left:10%;
-  padding-bottom: 30px;
-}
+  .about__text {
+    padding-left: 10%;
+    padding-bottom: 30px;
+  }
 
   .description__title,
   .about__title,
@@ -439,45 +474,44 @@ body{
     font-size: 28px;
   }
 
-.skills__container {
-  display: grid;
-  grid-template-columns:  200px;
- grid-template-rows: auto;
-  gap: 50px;
-}
+  .skills__container {
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: auto;
+    gap: 50px;
+  }
 
   .description__img,
   .about__img {
     width: 90%;
   }
 
-  .portfolio{
+  .portfolio {
     text-align: center;
-     padding-bottom: 100px;
+    padding-bottom: 100px;
   }
 
   .portfolio__container {
-  gap: 100px;
- 
-}
+    gap: 100px;
+  }
 
-.portfolio__container__img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 250px;
-  width: 350px;
-  background-color: rgb(48, 48, 48);
-  margin-left: 30px;
-  border-radius: 15px;
-}
+  .portfolio__container__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 350px;
+    background-color: rgb(48, 48, 48);
+    margin-left: 30px;
+    border-radius: 15px;
+  }
 
   .portfolio__img {
     height: 200px;
     width: 300px;
   }
 
-  .button__arrow{
+  .button__arrow {
     margin: 0 45%;
   }
 
@@ -489,10 +523,10 @@ body{
     font-size: 16px;
   }
 
-  .footer{
+  .footer {
     width: 100vw;
   }
-  .footer__btn{
-  margin-left: 0px;
-}
+  .footer__btn {
+    margin-left: 0px;
+  }
 }
