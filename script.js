@@ -3,7 +3,6 @@ const contact = document.querySelector(".description__btn-contact");
 const modalWindow = document.querySelector('#modal-window');
 const modalWindowBtn = document.querySelector(".modal-window__btn");
 
-console.log(contact, modalWindow)
 
 menuElements.forEach((el) => {
   el.addEventListener("click", () => {

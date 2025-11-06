@@ -327,6 +327,14 @@ color: #ff014f;
     gap: 100px;
   }
 
+
+
+
+
+
+
+
+
   .portfolio__container__element {
     gap: 100px;
   }
@@ -381,6 +389,8 @@ color: #ff014f;
     height: auto;
     margin: 20px 0;
   }
+
+
 
   .about {
     flex-direction: column-reverse; /* фото между заголовком и текстом */
@@ -458,6 +468,12 @@ color: #ff014f;
     gap: 15px;
     margin: 0 34%;
   }
+
+  .modal-window__container{
+  height: 80%;
+  width: 70%;
+}
+
 
   .about__img {
     display: none;
